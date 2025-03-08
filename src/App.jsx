@@ -1,10 +1,14 @@
 import React from "react";
 import styles from "./style";
 import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
+import GradientBackground from "./components/GradientBackground";
+import ScrollProgress from "./components/ScrollProgress";
 
 const App = () => {
   return (
     <div className="bg-primary w-full overflow-hidden text-lime-100">
+      <ScrollProgress />
+      <GradientBackground />
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar/>

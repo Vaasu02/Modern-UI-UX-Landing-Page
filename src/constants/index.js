@@ -74,18 +74,18 @@ export const stats = [
   {
     id: "stats-1",
     title: "User Active",
-    value: "3800+",
+    value: "3800+"
   },
   {
     id: "stats-2",
     title: "Trusted by Company",
-    value: "230+",
+    value: "230+"
   },
   {
     id: "stats-3",
     title: "Transaction",
-    value: "$230M+",
-  },
+    value: "$230M+"
+  }
 ];
 
 export const footerLinks = [
@@ -181,17 +181,21 @@ export const clients = [
   {
     id: "client-1",
     logo: airbnb,
+    link: "https://www.airbnb.com"
   },
   {
     id: "client-2",
     logo: binance,
+    link: "https://www.binance.com"
   },
   {
     id: "client-3",
     logo: coinbase,
+    link: "https://www.coinbase.com"
   },
   {
     id: "client-4",
     logo: dropbox,
+    link: "https://www.dropbox.com"
   },
 ];
