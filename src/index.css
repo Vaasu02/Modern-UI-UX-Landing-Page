@@ -220,3 +220,7 @@
 .nav-link:hover::after {
   width: 100%;
 }
+
+.hover\:shadow-glow:hover {
+  box-shadow: 0 0 15px rgba(51, 187, 207, 0.3);
+}

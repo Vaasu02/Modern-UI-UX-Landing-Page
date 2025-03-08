@@ -4,6 +4,7 @@ import { footerLinks, socialMedia } from "../constants";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import NewsletterSubscribe from './NewsletterSubscribe';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -163,6 +164,10 @@ const Footer = () => {
               </ul>
             </div>
           ))}
+        </div>
+        
+        <div className="flex-1 md:mt-0 mt-10 md:ml-10">
+          <NewsletterSubscribe />
         </div>
       </div>
 
