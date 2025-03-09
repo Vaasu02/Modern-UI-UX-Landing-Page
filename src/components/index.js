@@ -9,6 +9,8 @@ import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import Hero from "./Hero";
 import ScrollProgress from "./ScrollProgress";
+import Charts from "./Charts";
+import CurrencyConverter from "./CurrencyConverter";
 
 export {
   Navbar,
@@ -22,4 +24,6 @@ export {
   Testimonials,
   Hero,
   ScrollProgress,
+  Charts,
+  CurrencyConverter,
 };

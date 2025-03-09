@@ -224,3 +224,45 @@
 .hover\:shadow-glow:hover {
   box-shadow: 0 0 15px rgba(51, 187, 207, 0.3);
 }
+
+/* Custom dropdown styling */
+select option {
+  background-color: #00040f !important; /* primary color */
+  color: white !important;
+  padding: 10px;
+}
+
+select {
+  appearance: auto;
+}
+
+/* For Firefox */
+@-moz-document url-prefix() {
+  select {
+    color: white;
+    background-color: #00040f;
+  }
+  
+  select option {
+    background-color: #00040f;
+    color: white;
+  }
+}
+
+/* For Webkit browsers */
+select::-webkit-scrollbar {
+  width: 10px;
+}
+
+select::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+select::-webkit-scrollbar-thumb {
+  background: #3f3f5f;
+  border-radius: 5px;
+}
+
+select::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

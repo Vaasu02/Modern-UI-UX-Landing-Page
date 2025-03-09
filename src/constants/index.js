@@ -14,6 +14,14 @@ export const navLinks = [
     title: "Product",
   },
   {
+    id: "charts",
+    title: "Charts",
+  },
+  {
+    id: "currency-converter",
+    title: "Currency",
+  },
+  {
     id: "clients",
     title: "Clients",
   },
@@ -75,6 +83,7 @@ export const stats = [
     id: "stats-1",
     title: "User Active",
     value: "3800+"
+    
   },
   {
     id: "stats-2",
@@ -199,3 +208,315 @@ export const clients = [
     link: "https://www.dropbox.com"
   },
 ];
+
+export const currencies = [
+  { code: "USD", name: "US Dollar" },
+  { code: "EUR", name: "Euro" },
+  { code: "GBP", name: "British Pound" },
+  { code: "JPY", name: "Japanese Yen" },
+  { code: "AUD", name: "Australian Dollar" },
+  { code: "CAD", name: "Canadian Dollar" },
+  { code: "CHF", name: "Swiss Franc" },
+  { code: "CNY", name: "Chinese Yuan" },
+  { code: "INR", name: "Indian Rupee" },
+  { code: "BRL", name: "Brazilian Real" },
+];
+
+export const chartData = {
+  daily: {
+    line: {
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      datasets: [
+        {
+          label: "This Week",
+          data: [65, 59, 80, 81, 56, 55, 40],
+          borderColor: "rgba(33, 150, 243, 1)",
+          backgroundColor: "rgba(33, 150, 243, 0.1)",
+          fill: true,
+          tension: 0.4,
+        },
+        {
+          label: "Last Week",
+          data: [28, 48, 40, 19, 86, 27, 90],
+          borderColor: "rgba(156, 39, 176, 1)",
+          backgroundColor: "rgba(156, 39, 176, 0.1)",
+          fill: true,
+          tension: 0.4,
+        },
+      ],
+    },
+    bar: {
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      datasets: [
+        {
+          label: "Revenue",
+          data: [12, 19, 3, 5, 2, 3, 9],
+          backgroundColor: "rgba(33, 150, 243, 0.8)",
+        },
+        {
+          label: "Expenses",
+          data: [8, 12, 6, 7, 4, 2, 5],
+          backgroundColor: "rgba(156, 39, 176, 0.8)",
+        },
+      ],
+    },
+    pie: {
+      labels: ["Stocks", "Bonds", "Cash", "Real Estate", "Commodities"],
+      datasets: [
+        {
+          data: [35, 25, 15, 15, 10],
+          backgroundColor: [
+            "rgba(33, 150, 243, 0.8)",
+            "rgba(156, 39, 176, 0.8)",
+            "rgba(76, 175, 80, 0.8)",
+            "rgba(255, 152, 0, 0.8)",
+            "rgba(244, 67, 54, 0.8)",
+          ],
+          borderColor: "rgba(255, 255, 255, 0.5)",
+          borderWidth: 1,
+        },
+      ],
+    },
+    radar: {
+      labels: ["Speed", "Reliability", "Comfort", "Safety", "Efficiency", "Cost"],
+      datasets: [
+        {
+          label: "Product A",
+          data: [65, 59, 90, 81, 56, 55],
+          backgroundColor: "rgba(33, 150, 243, 0.2)",
+          borderColor: "rgba(33, 150, 243, 1)",
+          pointBackgroundColor: "rgba(33, 150, 243, 1)",
+        },
+        {
+          label: "Product B",
+          data: [28, 48, 40, 19, 96, 27],
+          backgroundColor: "rgba(156, 39, 176, 0.2)",
+          borderColor: "rgba(156, 39, 176, 1)",
+          pointBackgroundColor: "rgba(156, 39, 176, 1)",
+        },
+      ],
+    },
+  },
+  weekly: {
+    line: {
+      labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
+      datasets: [
+        {
+          label: "This Month",
+          data: [250, 320, 280, 360],
+          borderColor: "rgba(33, 150, 243, 1)",
+          backgroundColor: "rgba(33, 150, 243, 0.1)",
+          fill: true,
+          tension: 0.4,
+        },
+        {
+          label: "Last Month",
+          data: [200, 290, 220, 310],
+          borderColor: "rgba(156, 39, 176, 1)",
+          backgroundColor: "rgba(156, 39, 176, 0.1)",
+          fill: true,
+          tension: 0.4,
+        },
+      ],
+    },
+    bar: {
+      labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
+      datasets: [
+        {
+          label: "Revenue",
+          data: [42, 58, 37, 65],
+          backgroundColor: "rgba(33, 150, 243, 0.8)",
+        },
+        {
+          label: "Expenses",
+          data: [30, 42, 25, 40],
+          backgroundColor: "rgba(156, 39, 176, 0.8)",
+        },
+      ],
+    },
+    pie: {
+      labels: ["Stocks", "Bonds", "Cash", "Real Estate", "Commodities"],
+      datasets: [
+        {
+          data: [40, 20, 15, 15, 10],
+          backgroundColor: [
+            "rgba(33, 150, 243, 0.8)",
+            "rgba(156, 39, 176, 0.8)",
+            "rgba(76, 175, 80, 0.8)",
+            "rgba(255, 152, 0, 0.8)",
+            "rgba(244, 67, 54, 0.8)",
+          ],
+          borderColor: "rgba(255, 255, 255, 0.5)",
+          borderWidth: 1,
+        },
+      ],
+    },
+    radar: {
+      labels: ["Speed", "Reliability", "Comfort", "Safety", "Efficiency", "Cost"],
+      datasets: [
+        {
+          label: "Product A",
+          data: [70, 65, 85, 75, 60, 50],
+          backgroundColor: "rgba(33, 150, 243, 0.2)",
+          borderColor: "rgba(33, 150, 243, 1)",
+          pointBackgroundColor: "rgba(33, 150, 243, 1)",
+        },
+        {
+          label: "Product B",
+          data: [35, 55, 45, 25, 90, 30],
+          backgroundColor: "rgba(156, 39, 176, 0.2)",
+          borderColor: "rgba(156, 39, 176, 1)",
+          pointBackgroundColor: "rgba(156, 39, 176, 1)",
+        },
+      ],
+    },
+  },
+  monthly: {
+    line: {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      datasets: [
+        {
+          label: "This Year",
+          data: [1200, 1300, 1400, 1350, 1500, 1700, 1600, 1800, 1750, 1900, 2000, 2100],
+          borderColor: "rgba(33, 150, 243, 1)",
+          backgroundColor: "rgba(33, 150, 243, 0.1)",
+          fill: true,
+          tension: 0.4,
+        },
+        {
+          label: "Last Year",
+          data: [1000, 1100, 1200, 1150, 1300, 1500, 1400, 1600, 1550, 1700, 1800, 1900],
+          borderColor: "rgba(156, 39, 176, 1)",
+          backgroundColor: "rgba(156, 39, 176, 0.1)",
+          fill: true,
+          tension: 0.4,
+        },
+      ],
+    },
+    bar: {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      datasets: [
+        {
+          label: "Revenue",
+          data: [150, 170, 180, 160, 200, 220, 210, 230, 240, 250, 260, 280],
+          backgroundColor: "rgba(33, 150, 243, 0.8)",
+        },
+        {
+          label: "Expenses",
+          data: [100, 120, 130, 110, 140, 150, 140, 160, 170, 180, 190, 200],
+          backgroundColor: "rgba(156, 39, 176, 0.8)",
+        },
+      ],
+    },
+    pie: {
+      labels: ["Stocks", "Bonds", "Cash", "Real Estate", "Commodities"],
+      datasets: [
+        {
+          data: [45, 20, 10, 15, 10],
+          backgroundColor: [
+            "rgba(33, 150, 243, 0.8)",
+            "rgba(156, 39, 176, 0.8)",
+            "rgba(76, 175, 80, 0.8)",
+            "rgba(255, 152, 0, 0.8)",
+            "rgba(244, 67, 54, 0.8)",
+          ],
+          borderColor: "rgba(255, 255, 255, 0.5)",
+          borderWidth: 1,
+        },
+      ],
+    },
+    radar: {
+      labels: ["Speed", "Reliability", "Comfort", "Safety", "Efficiency", "Cost"],
+      datasets: [
+        {
+          label: "Product A",
+          data: [75, 70, 85, 80, 65, 60],
+          backgroundColor: "rgba(33, 150, 243, 0.2)",
+          borderColor: "rgba(33, 150, 243, 1)",
+          pointBackgroundColor: "rgba(33, 150, 243, 1)",
+        },
+        {
+          label: "Product B",
+          data: [40, 60, 50, 30, 95, 35],
+          backgroundColor: "rgba(156, 39, 176, 0.2)",
+          borderColor: "rgba(156, 39, 176, 1)",
+          pointBackgroundColor: "rgba(156, 39, 176, 1)",
+        },
+      ],
+    },
+  },
+  yearly: {
+    line: {
+      labels: ["2018", "2019", "2020", "2021", "2022", "2023"],
+      datasets: [
+        {
+          label: "Revenue",
+          data: [15000, 17000, 16500, 19000, 22000, 25000],
+          borderColor: "rgba(33, 150, 243, 1)",
+          backgroundColor: "rgba(33, 150, 243, 0.1)",
+          fill: true,
+          tension: 0.4,
+        },
+        {
+          label: "Profit",
+          data: [5000, 5500, 5200, 6500, 7800, 9000],
+          borderColor: "rgba(156, 39, 176, 1)",
+          backgroundColor: "rgba(156, 39, 176, 0.1)",
+          fill: true,
+          tension: 0.4,
+        },
+      ],
+    },
+    bar: {
+      labels: ["2018", "2019", "2020", "2021", "2022", "2023"],
+      datasets: [
+        {
+          label: "Revenue",
+          data: [1500, 1700, 1650, 1900, 2200, 2500],
+          backgroundColor: "rgba(33, 150, 243, 0.8)",
+        },
+        {
+          label: "Expenses",
+          data: [1000, 1200, 1150, 1300, 1400, 1600],
+          backgroundColor: "rgba(156, 39, 176, 0.8)",
+        },
+      ],
+    },
+    pie: {
+      labels: ["Stocks", "Bonds", "Cash", "Real Estate", "Commodities"],
+      datasets: [
+        {
+          data: [50, 15, 10, 15, 10],
+          backgroundColor: [
+            "rgba(33, 150, 243, 0.8)",
+            "rgba(156, 39, 176, 0.8)",
+            "rgba(76, 175, 80, 0.8)",
+            "rgba(255, 152, 0, 0.8)",
+            "rgba(244, 67, 54, 0.8)",
+          ],
+          borderColor: "rgba(255, 255, 255, 0.5)",
+          borderWidth: 1,
+        },
+      ],
+    },
+    radar: {
+      labels: ["Speed", "Reliability", "Comfort", "Safety", "Efficiency", "Cost"],
+      datasets: [
+        {
+          label: "Product A",
+          data: [80, 75, 90, 85, 70, 65],
+          backgroundColor: "rgba(33, 150, 243, 0.2)",
+          borderColor: "rgba(33, 150, 243, 1)",
+          pointBackgroundColor: "rgba(33, 150, 243, 1)",
+        },
+        {
+          label: "Product B",
+          data: [45, 65, 55, 35, 95, 40],
+          backgroundColor: "rgba(156, 39, 176, 0.2)",
+          borderColor: "rgba(156, 39, 176, 1)",
+          pointBackgroundColor: "rgba(156, 39, 176, 1)",
+        },
+      ],
+    },
+  },
+};

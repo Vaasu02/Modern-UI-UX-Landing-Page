@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./style";
-import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
+import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero, Charts, CurrencyConverter } from "./components";
 import GradientBackground from "./components/GradientBackground";
 import ScrollProgress from "./components/ScrollProgress";
 
@@ -27,7 +27,9 @@ const App = () => {
           <Stats/>
           <Business/>
           <Billing/>
+          <CurrencyConverter/>
           <CardDeal/>
+          <Charts/>
           <Testimonials/>
           <Clients/>
           <CTA/>
